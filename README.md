@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# EmPathRx 💙👩‍⚕️  
+*Emotionally intelligent disease tracking agent with escalation logic and SDG-aligned UX*
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+## 🧠 Overview
 
-1. Install dependencies
+**EmPathRx** is a modular health companion designed to track symptoms, log vitals, and respond with emotionally intelligent feedback. Built for emotionally vulnerable users and underserved contexts, it combines condition-specific logic with empathetic fallback and alert escalation.
 
-   ```bash
-   npm install
-   ```
+Whether you're feeling unsure, overwhelmed, or just want to monitor your health, EmPathRx listens, validates, and supports — one step at a time.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## ✨ Features
 
-In the output, you'll find options to open the app in a
+- **Chat-Based Symptom Input + Emotional Response**  
+  Conversational interface that detects physical symptoms and emotional tone (e.g. “scared,” “worried”) to offer validating feedback.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Condition-Specific State Machines**  
+  Uses XState logic for asthma, COPD, heart disease, diabetes, and point-of-care scenarios.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **Vitals Logging**  
+  Tracks oxygen levels, heart rate, temperature, and more.
 
-## Get a fresh project
+- **Threshold-Based Alert System**  
+  Triggers escalation logic when symptoms persist or vitals worsen.
 
-When you're ready, run:
+- **Signal Dispatch (Mocked for Demo)**  
+  Simulates alert notifications to caregivers or emergency contacts.
 
-```bash
-npm run reset-project
-```
+- **Modular Architecture**  
+  Clean separation of UI, logic, and state machines for easy extension.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🧱 Tech Stack
 
-To learn more about developing your project with Expo, look at the following resources:
+- React Native + Expo
+- XState for condition logic
+- AsyncStorage / Firebase (optional)
+- AWS SNS / Twilio (mocked for demo)
+- Emotionally adaptive UX
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+📸 Demo Flow
+Due to deployment constraints, the demo runs locally and showcases the chat interface with emotional fallback and condition-specific guidance.
 
-Join our community of developers creating universal apps.
+Navigate through:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Select Condition
+
+Log Vitals
+
+Dashboard
+
+Chatbox
+
+AI Response
+
+Watch the emotional tone shift based on input
+
+Simulate alert trigger when escalation thresholds are crossed
+
+The chat interface previewed in the demo reflects real-time emotional UX and symptom interpretation. Signal dispatch and vitals logging are mocked for clarity.
+
+🌍 SDG Alignment
+Goal 3: Good Health and Well-being
+
+Goal 5: Gender Equality
+
+Goal 10: Reduced Inequalities
+
+EmPathRx is designed to support users in low-resource settings, especially women and caregivers, with emotionally intelligent health tracking.
+
+👩‍💻 Authors
+Built by:
+
+Aisha Sultana — Core Graphic Design & Tech Lead at WE Hub, Computer Science undergrad at Lords Institute of Engineering and Technology, Hackathon finalist | SDG innovator | Emotionally intelligent UX designer
+
+Sameeha Sultana — First-year Computer Science undergrad, Passionate about health tech, logic design, and collaborative problem-solving
+
+🤝 Contributions
+This project was co-developed by two sisters with a shared vision for emotionally intelligent, inclusive healthcare tools. All logic, design, and architecture were built collaboratively for the AWS AI Agent Hackathon.
+
+🛡️ Disclaimer
+EmPathRx is not a diagnostic tool. It provides supportive feedback and symptom tracking, but is not a substitute for professional medical advice.
